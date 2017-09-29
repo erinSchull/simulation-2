@@ -9,7 +9,14 @@ require('dotenv').config()
 
 //revise below for database connection
 
+//Controllers
 
+const users_controller = require('./controllers/users_controller');
+// const listings_controller = require('./controllers/listings_controller');
+// const auth_controller = requre('./controllers/auth_controller');
+
+const app = express();
+app.use( bodyParser.json() );
 
 
 //**Endpoints**
@@ -17,6 +24,7 @@ require('dotenv').config()
 //Get
 
 //Create
+app.post( '/api/register', users_controller.register);
 
 //Update
 
