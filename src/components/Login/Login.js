@@ -29,8 +29,10 @@ class Login extends Component{
                     })
                 }}/>
                 <div>
-                    <button onClick={() => alert('Still need to connect')}>Login</button>
-                    <button onClick={() => alert('Seriously need to connect')}>Register</button>
+                    <Link to="/dashboard">
+                    <button>Login</button>
+                    <button>Register</button>
+                    </Link>
                 </div>
             </div>
         )

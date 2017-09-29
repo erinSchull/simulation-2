@@ -10,8 +10,6 @@ export default (
     <div>
         <Switch>
             <Route component={Login} exact path='/' />
-        </Switch>
-        <Switch>
             <Route component={Dashboard} path='/Dashboard' />
         </Switch>
     </div>

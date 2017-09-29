@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import router from './router.js';
 import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
+import logo from './houser-logo.jpg';
 
 
 class App extends Component {
@@ -14,14 +15,10 @@ class App extends Component {
       <div className="App">
 
         <div>
-          <h4>Logo</h4>
-          <h4>Houser Dashboard</h4>
-          <h4>Logout</h4>
+          <img src={logo} alt='logo'/>
         </div>
         {router}
         <div>
-          {/* <Login />
-          <Dashboard /> */}
         </div>
       </div>
     );
