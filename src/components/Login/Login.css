@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.root {
+    background-color: #AFD4C0;
+}
+.username-input {
+    border: 1px solid #519872;
+    font-family: 'Open Sans', sans-serif;
+}
+.password-input {
+    border: 1px solid #519872;
+    font-family: 'Open Sans', sans-serif;
+}
+.login-button {
+    background-color: #8AEA92;
+    font-family: 'Open Sans', sans-serif;
+}
+.register-button {
+    background-color: #3B5249;
+    font-family: 'Open Sans', sans-serif;
+}
