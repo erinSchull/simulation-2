@@ -3,10 +3,19 @@
 module.exports = {
     register: ( req, res, next ) => {
       const db = req.app.get('db');
-      const { params, query } = req; 
+      const { username, password } = req.body; 
 
-      db.add_inventory([params.id, params.name, params.price, query.desc])   
+         db.create_user([username, password])   
         .then( () => res.status(200).send() )
-        .catch( () => res.status(500).send() );
+        .catch( () => res.status(500).send('username invalid') );
     }
   };
+
+//   update: ( req, res, next ) => {
+//     const dbInstance = req.app.get('db');
+//     const { params, query } = req;
+
+//     dbInstance.update_product([ params.id, query.desc ])
+//       .then( () => res.status(200).send() )
+//       .catch( () => res.status(500).send() );
+//   },
