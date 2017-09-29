@@ -16,11 +16,6 @@ class Login extends Component{
     render(){
         return (
             <div>
-                <div>
-                    <h4>Logo</h4>
-                    <h4>Houser Dashboard</h4>
-                    <h4>Logout</h4>
-                </div>
                 <h4>Username</h4>
                 <input value={this.state.username} onChange={(e) => {
                     this.setState({
