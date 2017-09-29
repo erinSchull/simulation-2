@@ -2,6 +2,7 @@
 
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 class Login extends Component{
     constructor() {
@@ -13,6 +14,18 @@ class Login extends Component{
         }
     }
 
+    //     axios.post('/api/register')
+    //       .then(response => {
+    //         let newBinVals = response.data.map(bin => {
+    //           return bin.name ? true : false;
+    //         });
+    //         this.setState({
+    //             username: newBinVals
+    //         });
+    //       })
+    //       .catch(error => {console.log(error);});
+    //   }
+      
     render(){
         return (
             <div>
