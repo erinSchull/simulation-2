@@ -3,6 +3,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import './Login.css';
 
 class Login extends Component{
     constructor() {
@@ -28,15 +29,15 @@ class Login extends Component{
       
     render(){
         return (
-            <div>
+            <div className= 'root'>
                 <h4>Username</h4>
-                <input value={this.state.username} onChange={(e) => {
+                <input classname='username-input' value={this.state.username} onChange={(e) => {
                     this.setState({
                         username: e.target.value
                     })
                 }}/>
                 <h4>Password</h4>
-                <input value={this.state.password} onChange={(i) => {
+                <input classname='password-input' value={this.state.password} type='password' onChange={(i) => {
                     this.setState({
                         password: i.target.value
                     })
