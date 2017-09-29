@@ -17,21 +17,18 @@ class Dashboard extends Component{
     render(){
         return (
             <div>
-                <h4>Username</h4>
+                <Link to='wizard/1'>
+                <button>Add new property</button>
+                </Link>
+                <h4>List properties with "desired rent" greator than: $</h4>
                 <input value={this.state.username} onChange={(e) => {
                     this.setState({
                         username: e.target.value
                     })
                 }}/>
-                <h4>Password</h4>
-                <input value={this.state.password} onChange={(i) => {
-                    this.setState({
-                        password: i.target.value
-                    })
-                }}/>
                 <div>
-                    <button onClick={() => alert('Still need to connect')}>Blah</button>
-                    <button onClick={() => alert('Seriously need to connect')}>Haha</button>
+                    <button onClick={() => alert('Seriously need to connect')}>Filter</button>
+                    <button onClick={() => alert('Seriously need to connect')}>Reset</button>
                 </div>
             </div>
         )
